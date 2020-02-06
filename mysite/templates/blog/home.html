@@ -1,0 +1,84 @@
+{% extends 'blog/base.html'%}
+{% load static %}
+{% block body %}
+
+
+
+<div class="Banner_section">
+  <div class="container">
+    <div class="banner_img">
+      <img src="{% static 'img/font-end-banner.PNG' %}" class="img-fluid" alt=>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="about">
+
+{% for aboutDetail in aboutDetails %}
+  <div class="container">
+    <div class="about_details_section">
+    <div class="row">
+<div class="col-md-4">
+  <div class="heading_section">
+    <p class="abouttitle">{{ aboutDetail.headingtitle}}</p>
+    <h2 class="aboutheading">{{ aboutDetail.heading }}</h2>
+  </div>
+</div>
+
+<div class="col-md-8">
+  <div class="heading_section">
+  <p>{{aboutDetail.text }}</p>
+</div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+
+    <div class="skill_section">
+    <div class="skill_div">
+      <div class="text-center">
+        <i class="fas fa-code"></i>
+      </div>
+      <h2 class="skill_name">Web Development</h2>
+      <p class="skill_service_details">
+HTML, CSS (Bootstrap, Foundation),
+ JavaScript (React, Node, Express, MongoDB) ? You name it. I have it all covered!
+      </p>
+    </div>
+    <div class="skill_div">
+      <div class="text-center">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <h2 class="skill_name">Responsive Design</h2>
+      <p class="skill_service_details">In 2020 you can't go online without
+        having a mobile responsive website. Let me take care of that for you!</p>
+    </div>
+    <div class="skill_div">
+      <div class="text-center">
+        <i class="fab fa-wordpress"></i>
+      </div>
+        <h2 class="skill_name">Wordpress</h2>
+        <p class="skill_service_details">
+Millions of website are built on top of Wordpress, yours can become the next one!
+        </p>
+    </div>
+    <div class="skill_div">
+      <div class="text-center">
+      <i class="fas fa-tools"></i>
+      </div>
+        <h2 class="skill_name">PSD TO HTML</h2>
+        <p class="skill_service_details">
+Millions of website are built on top of Wordpress, yours can become the next one!
+        </p>
+    </div>
+
+  </div>
+{% endblock %}

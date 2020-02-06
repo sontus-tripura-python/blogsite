@@ -1,0 +1,326 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.homebody{
+  background: #ddd;
+  min-height: 800px;
+}
+/*--- responsive navbar---*/
+#id_title{
+  padding: 5px;
+  width: 100%;
+}
+.post_date{
+  margin: 0;
+  padding: 0;
+}
+.post_heading{
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*--- second main navbar---*/
+.social_navbar{
+  margin-top: 50px;
+}
+.left_area{
+  padding:10px 0px;
+z-index:1;
+position:fixed;
+left:0;
+top:0;
+width: 300px;
+background: #000;
+height: 100%;
+}
+.my_img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.img_section{
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+.nav_bar{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+text-align: center;
+font-size: 22px;
+  color: #fff !important;
+}
+.nav_bar li{
+    color: #fff !important;
+  list-style: none;
+
+}
+.nav_bar li a{
+    color: #fff !important;
+
+}
+.nav_bar li a:hover{
+    color: orange !important;
+  text-decoration: none;
+}
+
+.top_bar_section{
+  height: 50px;
+  background: #c6ae2f;
+  box-shadow: 2px 2px 3px 2px #000;
+}
+.top_bar{
+margin-left: 150px;
+  text-align: center;
+}
+.top_bar a{
+  color: #fff !important;
+}
+.banner_img{
+  margin-left: 150px;
+  margin-top: 150px;
+}
+.about_details_section{
+  margin-left: 250px;
+}
+.post_section{
+
+}
+.card{
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+.card-body{
+    margin-top: 5px;
+}
+.card:hover{
+  cursor: pointer;
+  margin-top: -2px;
+  margin-bottom: 5px;
+}
+.post_div{
+  margin-bottom: 5px;
+  margin-left: 150px;
+    margin-top: 150px;
+}
+.aboutheading{
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.abouttitle{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.skill_div{
+  min-height: 250px;
+  width: 250px;
+  background: #fff;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+}
+.skill_section{
+  margin-left: 310px;
+}
+.fa-code{
+  color: red;
+  padding: 10px;
+  font-size: 50px;
+}
+.fa-laptop-code{
+  color: red;
+  padding: 10px;
+  font-size: 50px;
+}
+.fa-wordpress{
+  color: red;
+  padding: 10px;
+  font-size: 50px;
+}
+.fa-tools{
+  color: red;
+  padding: 10px;
+  font-size: 50px;
+}
+.skill_name{
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+}
+.skill_service_details{
+  text-align:center;
+
+}
+.client_div_section{
+  height: 300px;
+  width: 300px;
+  float: none;
+  display: block;
+}
+.post_title{
+  font-size: 30px;
+  color: #000 !important;
+}
+/*-- contact---*/
+.contactbg{
+	margin-top:20px;
+	background:#adaaaa;
+	min-height:500px;
+}
+.ContactTitle{
+	padding-top:20px;
+	text-align: center;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+.ContactTitle:after{
+	content:'';
+	display:block;
+	height:2px;
+	width:150px;
+	margin:10px auto;
+	background:#000;
+}
+
+#sendbtn{
+	width:100%;
+	height:50px;
+	letter-spacing:3px;
+	padding:10px;
+	background:green !important;
+	transition:.5s;
+	border-radius:10px;
+
+}
+#sendbtn:hover{
+	background:#fff !important;
+	color:#000;
+	transition:.5s;
+}
+#contactaddress{
+	background:#294830;
+	min-height:200px;
+}
+.address{
+	color:#fff;
+	text-align:center;
+}
+.address .fa{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:20px;
+	padding:10px;
+	width:40px;
+	height:40px;
+  border-radius: 50%;
+	border:1px solid #000;
+   	color:#fff;
+}
+.address .fa:hover{
+	border:1px solid #fff;
+   	color:blue;
+}
+.address p{
+	margin:0;
+	padding:0;
+}
+.form_div{
+  margin-left: 150px;
+}
+.form_section{
+  margin-top: 50px;
+  margin-right: 150px;
+  background: #fff;
+  padding: 20px 50px;
+}
+/*--- Social links---*/
+.instagramcolor{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  padding: 11px;
+  font-size: 30px;
+  background:#E4405F;
+  color: white;
+}
+.link-IN {
+  background: #007bb5;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  padding: 12px;
+  font-size: 30px;
+}
+.twittercolor {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  padding: 12px;
+  font-size: 30px;
+  background: #55ACEE;
+  color: white;
+}
+.fbcolor {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  padding: 15px;
+  font-size: 30px;
+  background: #3B5998;
+
+  color: white;
+}
+.fbcolor:hover{
+  background: #fff;
+
+  color: #3B5998;
+}
+.fa-github{
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  background: #3B5998;
+}
+.fa-linkedin-in{
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  background: #3B5998;
+}
+.social-icon {
+  margin-top: 50px;
+  padding: 20px;
+}
+.post_create_section{
+  margin-top: 100px;
+}
+.post_navbar{
+  margin-top: 20px;
+}
+.post_draft_section{
+  margin-left: 200px;
+}

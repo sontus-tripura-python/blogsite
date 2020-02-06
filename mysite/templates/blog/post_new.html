@@ -1,0 +1,23 @@
+
+
+{% extends 'blog/base.html' %}
+{% block body %}
+<div class="about">
+  <div class="container">
+    <div class="post_create_section">
+      <div class="about_details_section">
+      <div class="row">
+        <form class="post-form-blog" action="" method="post">
+          {% csrf_token %}
+          {{ form.media }}
+          {{ form.as_p }}
+          <button type="submit" name="button" class="btn btn-primary save_button">SAVE</button>
+
+        </form>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

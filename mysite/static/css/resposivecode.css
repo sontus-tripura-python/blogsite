@@ -1,0 +1,183 @@
+@media only screen and (min-width: 400px) and (max-width: 770px) {
+  .left_area{
+    display: none;
+  }
+  .nav_section{
+    display: none;
+  }
+  .about_details_section{
+    padding: 10px;
+      margin-left: 2px;
+
+    }
+  .top_bar{
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  .banner_img{
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .skill_section{
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .skill_div{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .post_div{
+    width: 100%;
+    margin-left: 2px;
+      margin-top: 30px;
+  }
+  .aboutheading{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .abouttitle{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .form_div{
+    margin-left: 10px;
+  }
+  .form_section{
+    margin-top: 50px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+  .left_area{
+    display: none;
+  }
+  .about_details_section{
+    margin-left: 2px;
+
+  }
+  .heading_section{
+        width: 100%;
+      overflow: hidden;
+      display: block;
+    margin-left: 2px;
+  }
+  .about{
+    margin-left: 2px;
+  }
+  .nav_section{
+    display: none;
+  }
+  .top_bar{
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  .topheading{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .banner_img{
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .skill_section{
+
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .post_div{
+    width: 100%;
+    margin-left: 2px;
+      margin-top: 30px;
+  }
+  .aboutheading{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .abouttitle{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .form_div{
+    margin-left: 10px;
+  }
+  .form_section{
+    margin-top: 50px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .nameofmy{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1000px) {
+  .second_navbar{
+    display: none;
+  }
+  .left_area{
+    padding:10px 0px;
+  z-index:1;
+  position:fixed;
+  left:0;
+  top:0;
+  width: 200px;
+  background: #000;
+  height: 100%;
+  }
+  .form_div{
+    margin-left: 80px;
+  }
+  .form_section{
+    margin-top: 50px;
+    margin-right: 2px;
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .about_details_section{
+    margin-left: 180px;
+  }
+  .aboutheading{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .abouttitle{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .nameofmy{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: capitalize;
+  }
+  .banner_img{
+    margin-left: 150px;
+  }
+}
+@media only screen and (min-width: 1001px){
+  .second_navbar{
+    display: none;
+  }
+  .nameofmy{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: capitalize;
+  }
+}

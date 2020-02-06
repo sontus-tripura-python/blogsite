@@ -1,0 +1,114 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+          <link rel="stylesheet" href="{% static 'css/resposivecode.css' %}" />
+  <!--- font awesome----------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+<!------- all plugin css call------->
+ <script src=" https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"></script>
+
+
+
+
+    <title>Sontus blog</title>
+</head>
+<body class="homebody">
+
+  <div class="left_area">
+    {% for about in abouts %}
+  <div class="img_section">
+  <img src="{{ about.image.url}}" alt="" class="my_img">
+  <h2 class="nameofmy">{{ about.name }}</h2>
+  </div>
+  {% endfor %}
+  <div class="nav_section">
+  <nav class="nav_bar">
+  <li><a href="{% url 'home' %}">ABOUT</a></li>
+  <li><a href="{% url 'post_list' %}">BLOG</a></li>
+      <li><a href="{% url 'contact' %}">CONTACT</a></li>
+  </nav>
+  </div>
+  <div class="social_navbar">
+    <div class="nav_section">
+    <nav class="nav_bar">
+
+    <div class="social-icon text-center">
+
+      <li class="socialLIst"><a href=""><i class="fab fa-facebook-f fbcolor"></i></a></li>
+     <li><a href="">  <i class="fab fa-twitter twittercolor"></i></a></li>
+     <li><a href=""><i class="fab fa-instagram instagramcolor"></i></a></li>
+      <li><a href=""><i class="fab fa-github"></i></a></li>
+      <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+
+    </div>
+
+    </nav>
+    </div>
+  </div>
+  </div>
+  <div class="top_bar_section">
+<div class="container">
+  <div class="top_bar">
+        <h5 class="topheading"><a href="#">Learn JavaScript , python django and Node.js and React js</a></h5>
+  </div>
+</div>
+  </div>
+<div class="post_navbar">
+  {% if user.is_authenticated %}
+  <div class="top_bar_section">
+<div class="container">
+  <div class="top_bar">
+      <a href="{% url 'post_new'%}" class="btn btn-success">Post New</a>
+        <a href="{% url 'post_draft'%}" class="btn btn-danger">Post Draft</a>
+  </div>
+</div>
+  </div>
+  {% endif %}
+</div>
+  <div class="second_navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">ABOUT <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'post_list' %}">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+      {% block body %}
+      {% endblock %}
+
+
+
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
